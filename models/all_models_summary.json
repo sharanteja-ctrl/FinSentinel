@@ -1,0 +1,70 @@
+[
+    {
+        "model_name": "Logistic Regression",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "confusion_matrix": {
+            "tn": 9983,
+            "fp": 0,
+            "fn": 0,
+            "tp": 17
+        },
+        "classification_report_str": "              precision    recall  f1-score   support\n\n           0     1.0000    1.0000    1.0000      9983\n           1     1.0000    1.0000    1.0000        17\n\n    accuracy                         1.0000     10000\n   macro avg     1.0000    1.0000    1.0000     10000\nweighted avg     1.0000    1.0000    1.0000     10000\n",
+        "training_time_seconds": 0.07
+    },
+    {
+        "model_name": "Random Forest",
+        "accuracy": 0.9999,
+        "precision": 1.0,
+        "recall": 0.9412,
+        "f1_score": 0.9697,
+        "roc_auc": 1.0,
+        "pr_auc": 0.9912,
+        "confusion_matrix": {
+            "tn": 9983,
+            "fp": 0,
+            "fn": 1,
+            "tp": 16
+        },
+        "classification_report_str": "              precision    recall  f1-score   support\n\n           0     0.9999    1.0000    0.9999      9983\n           1     1.0000    0.9412    0.9697        17\n\n    accuracy                         0.9999     10000\n   macro avg     0.9999    0.9706    0.9848     10000\nweighted avg     0.9999    0.9999    0.9999     10000\n",
+        "training_time_seconds": 2.75
+    },
+    {
+        "model_name": "XGBoost",
+        "accuracy": 0.9998,
+        "precision": 0.9412,
+        "recall": 0.9412,
+        "f1_score": 0.9412,
+        "roc_auc": 1.0,
+        "pr_auc": 0.9877,
+        "confusion_matrix": {
+            "tn": 9982,
+            "fp": 1,
+            "fn": 1,
+            "tp": 16
+        },
+        "classification_report_str": "              precision    recall  f1-score   support\n\n           0     0.9999    0.9999    0.9999      9983\n           1     0.9412    0.9412    0.9412        17\n\n    accuracy                         0.9998     10000\n   macro avg     0.9705    0.9705    0.9705     10000\nweighted avg     0.9998    0.9998    0.9998     10000\n",
+        "training_time_seconds": 0.33
+    },
+    {
+        "model_name": "Neural Network (MLP)",
+        "accuracy": 0.9997,
+        "precision": 0.9375,
+        "recall": 0.8824,
+        "f1_score": 0.9091,
+        "roc_auc": 1.0,
+        "pr_auc": 0.9933,
+        "confusion_matrix": {
+            "tn": 9982,
+            "fp": 1,
+            "fn": 2,
+            "tp": 15
+        },
+        "classification_report_str": "              precision    recall  f1-score   support\n\n           0     0.9998    0.9999    0.9998      9983\n           1     0.9375    0.8824    0.9091        17\n\n    accuracy                         0.9997     10000\n   macro avg     0.9686    0.9411    0.9545     10000\nweighted avg     0.9997    0.9997    0.9997     10000\n",
+        "training_time_seconds": 2.24
+    }
+]
